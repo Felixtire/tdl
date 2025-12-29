@@ -1,0 +1,25 @@
+
+<mat-sidenav-container>
+
+  <mat-sidenav #sidenav mode="over">
+    <button mat-button>Consultar</button>
+  </mat-sidenav>
+<mat-sidenav-content>
+
+
+  <mat-toolbar color="accent">
+    <mat-card-title>
+      <button mat-icon-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
+    </mat-card-title>
+    <span><h1>Todo</h1></span>
+  </mat-toolbar>
+
+  <app-tasks></app-tasks>
+
+
+</mat-sidenav-content>
+
+
+</mat-sidenav-container>
+
+

@@ -1,0 +1,49 @@
+.list {
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  transition: box-shadow 0.2s ease;
+}
+
+/* Efeito hover */
+.list:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Título */
+mat-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #212121;
+}
+
+/* Descrição */
+.list p {
+  margin: 0;
+  font-size: 14px;
+  color: #616161;
+}
+
+/* Status */
+.list p:last-child {
+  font-weight: 500;
+  color: #1976d2;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .list {
+    padding: 12px;
+  }
+
+  mat-card-title {
+    font-size: 16px;
+  }
+}

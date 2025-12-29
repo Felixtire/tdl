@@ -1,0 +1,41 @@
+.main {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Campos de input ocupam toda largura */
+mat-form-field {
+  width: 100%;
+}
+
+/* Grupo de rádio */
+mat-radio-group {
+  display: flex;
+  gap: 20px;
+  margin-top: 8px;
+}
+
+/* Ajuste visual dos radios */
+mat-radio-button {
+  font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .main {
+    margin: 16px;
+    padding: 16px;
+  }
+
+  mat-radio-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
